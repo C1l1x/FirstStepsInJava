@@ -8,13 +8,15 @@ public class Date {
     
     Scanner scan;
     
-    public Date(){
-        scan = new Scanner(System.in);
-        System.out.println("Insert day:");
-        day = scan.nextInt();
-        System.out.println("Insert month:");
-        month = scan.nextInt();
-        System.out.println("Insert year:");
-        year = scan.nextInt();
+    public Date(int day, int month, int year){
+        this.day = day;
+        this.month = month;
+        this.year = year;
+    }
+    
+    void display(){
+        System.out.println("Day: " + day);
+        System.out.println("Month: " + month);
+        System.out.println("Year: " + year);
     }
 }
