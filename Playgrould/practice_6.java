@@ -16,6 +16,8 @@ public class practice_6 {
             System.out.println("Input:");
             Input = scan.next().charAt(0);
             switch (Input) {
+                case 's': continue; 
+                    
                 case '1':
                     getData(person, br, scan);
                     br++;
